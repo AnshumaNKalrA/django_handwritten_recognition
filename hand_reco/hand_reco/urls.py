@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from hand_reco.views import homePage, resultPage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', homePage),
+    path('result/', resultPage),
 ]
